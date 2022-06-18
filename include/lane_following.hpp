@@ -15,7 +15,7 @@ class Lane_Following{
 private:
   ros::Subscriber img_sub;
   ros::Publisher cmd_vel_pub_;
-  void subs_callback(const sensor_msgs::ImageConstPtr& msg);
+  void subs_callback(const sensor_msgs::CompressedImageConstPtr& msg);
 
   Point prevpt1 = Point(50, 60);
   Point prevpt2 = Point(250, 60);
